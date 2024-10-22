@@ -26,9 +26,9 @@ button {
 }
 
 .fortuneCookie {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
+    width:100px;
+    height:100px;
+    cursor:pointer;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
