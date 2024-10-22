@@ -26,13 +26,25 @@ button {
 }
 
 .fortuneCookie {
-    width:100px;
-    height:100px;
-    cursor:pointer;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     transition: transform 0.2s;
+}
+
+@keyframes subtleMove {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(1px, 1px); }
+    50% { transform: translate(-1px, -1px); }
+    75% { transform: translate(1px, 1px); }
+    100% { transform: translate(0, 0); }
+}
+
+.fortuneCookie {
+    animation-name: subtleMove;
 }
 
 .fortuneCookie:hover {
@@ -41,6 +53,6 @@ button {
 
 #fortuneMessage {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 24px;
     color: #333;
 }
