@@ -35,24 +35,12 @@ button {
     transition: transform 0.2s;
 }
 
-@keyframes subtleMove {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(1px, 1px); }
-    50% { transform: translate(-1px, -1px); }
-    75% { transform: translate(1px, 1px); }
-    100% { transform: translate(0, 0); }
-}
-
-.fortuneCookie {
-    animation-name: subtleMove;
-}
-
 .fortuneCookie:hover {
     transform: scale(1.1);
 }
 
 #fortuneMessage {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
 }
