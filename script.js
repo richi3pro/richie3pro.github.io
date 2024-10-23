@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const fortuneMessageContainer = document.getElementById("fortuneMessage");
     const fortuneMessageText = fortuneMessageContainer.querySelector("p");
     const fortuneCookies = document.querySelectorAll(".fortuneCookie");
+    const snakeButton = document.getElementById("snakeButton");
 
     const fortunes = [
         "El éxito es como la calidad en el TecNM: siempre es medible y mejora con cada paso.",
@@ -70,7 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Eres tan increíble que deberías tener tu propio programa de televisión. ¡En horario estelar!",
         "El destino te tiene preparada una sorpresa... ¡solo asegúrate de que sea algo divertido!",
         "El próximo lunes será más fácil de sobrellevar si empiezas a planearlo el domingo con una siesta.",
-        "La mejor forma de encontrar el camino correcto es perderte un poquito primero."
+        "La mejor forma de encontrar el camino correcto es perderte un poquito primero.",
+        // Aquí agregar más frases si es necesario...
     ];
 
     startButton.addEventListener("click", () => {
@@ -86,6 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
             fortuneMessageText.textContent = fortune;
             fortuneMessageContainer.classList.remove("hidden");
             cookiesContainer.classList.add("hidden");
+            snakeButton.classList.remove("hidden"); // Mostrar botón "Snake!" al revelar la frase
         });
+    });
+
+    // Enlace al juego de la serpiente
+    snakeButton.addEventListener("click", () => {
+        window.location.href = 'snake.html'; // Aquí colocas el enlace correcto al juego de la serpiente
     });
 });
