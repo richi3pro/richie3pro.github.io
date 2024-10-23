@@ -89,3 +89,26 @@ document.addEventListener("DOMContentLoaded", () => {
     // Iniciar el bucle del juego
     setInterval(gameLoop, 100); // Actualizar el juego cada 100ms
 });
+document.getElementById('upBtn').addEventListener('click', () => {
+    if (direction !== 'DOWN') {
+        direction = 'UP';
+    }
+});
+
+document.getElementById('downBtn').addEventListener('click', () => {
+    if (direction !== 'UP') {
+        direction = 'DOWN';
+    }
+});
+
+document.getElementById('leftBtn').addEventListener('click', () => {
+    if (direction !== 'RIGHT') {
+        direction = 'LEFT';
+    }
+});
+
+document.getElementById('rightBtn').addEventListener('click', () => {
+    if (direction !== 'LEFT') {
+        direction = 'RIGHT';
+    }
+});

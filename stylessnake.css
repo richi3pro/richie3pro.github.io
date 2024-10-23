@@ -23,6 +23,11 @@ canvas {
     border: 5px solid #333;
 }
 
+#controls button {
+    padding: 15px;
+    font-size: 20px;
+    margin: 5px;
+}
 .controls {
     margin-top: 20px;
     font-size: 24px;
