@@ -78,7 +78,7 @@ button:hover {
 }
 
 .LogoFortuna {
-    width: 500px;
+    max-width: 80%;
     height: auto;
     margin-bottom: 20px;
     align-items: center;
