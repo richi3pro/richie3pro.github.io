@@ -14,10 +14,7 @@
     <a><img src="Logo.gif" alt="logo.gif" alt="Logo" class="LogoFortuna"></a>
        <!-- <h1>¡Galletas de la Fortuna!</h1>-->
         <button id="startButton">Iniciar</button>
-            <audio controls autoplay>
-                <source src="pista.mp3" type="audio/mpeg">
-                Tu navegador no soporta la etiqueta de audio.
-            </audio>
+            
         <div id="cookiesContainer" class="hidden">
             <h2>Selecciona una galleta:</h2>
             <div class="cookies">
@@ -28,7 +25,12 @@
         </div>
         <div id="fortuneMessage" class="hidden">
             <p></p>
+            <button onclick="window.location.href='game.html'">¿Quieres romper mas galletas?</button>
         </div>
+        <audio controls autoplay loop class="audio">
+                <source src="pista.mp3" type="audio/mpeg">
+                Tu navegador no soporta la etiqueta de audio.
+            </audio>
     </div>
      <script src="script.js"></script>
 </body>

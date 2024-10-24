@@ -49,7 +49,9 @@ button {
     font-size: 26px;
     cursor: pointer;
 }*/
-
+.audio{
+    margin: 20px;
+}
 
 button {
     width: auto; /* Ajusta el ancho al tamaño del texto */
@@ -63,6 +65,7 @@ button {
     border-radius: 10px; /* Bordes redondeados para mejor apariencia */
     margin: 0; /* Quita el margen superior */
 }
+
 
 button:focus {
     outline: none; /* Quita el borde del enfoque en algunos navegadores */
