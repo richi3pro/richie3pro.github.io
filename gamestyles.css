@@ -50,13 +50,21 @@ button:hover {
     transition: transform 0.2s ease;
 }
 
-.cookie:active {
+
+.cookie:hover {
+    transform: scale(1.1);
+}
+    .cookie:active {
     transform: scale(0.9);
 }
 
+
 #fortuneMessage {
+    max-width: 50%;
+    font-weight: 300;
+    margin-top: 30px;
     font-size: 24px;
-    margin-top: 20px;
+    color: #333;
 }
 
 .hidden {
