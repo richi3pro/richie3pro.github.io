@@ -75,10 +75,14 @@ button:hover {
 }
 
 .LogoFortuna {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
     align-items: center;
     gap: 20px;
 
 }
+
 .cookies {
     display: flex;
     justify-content: center;
