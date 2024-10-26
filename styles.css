@@ -20,7 +20,7 @@ body {
     width: 100%;
     display: flex; /* Añadido para centrar verticalmente */
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 .container {
@@ -124,4 +124,12 @@ button:hover {
     margin-top: 30px;
     font-size: 18px;
     color: #333;
+}
+
+p a {
+    font-style: italic;
+}
+
+p a :hover {
+    font-weight: 800;
 }
